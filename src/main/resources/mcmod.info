@@ -1,0 +1,13 @@
+[
+  {
+    "modid": "cmdkey",
+    "name": "CmdKey",
+    "description": "Cmd for key.",
+    "version": "${version}",
+    "mcversion": "1.6.4",
+    "url": "https://github.com/Nova-Committee/CmdKey",
+    "authorList": [
+      "cnlimiter"
+    ]
+  }
+]

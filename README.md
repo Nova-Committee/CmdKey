@@ -4,10 +4,10 @@
 - 启动一次，生成cmdkey.cfg，填入密钥，可以定义密钥
 - 密钥正确后在服务端config文件夹下面会生成cmdkey/cmd.json
 ## 2.自定义
-![自定义命令](\web\custom_cmd.png)
+![自定义命令](./web/custom_cmd.png)
 ``自定义命令按键``
 
-![自定义命令](\web\multi_cmd.png)
+![自定义命令](./web/multi_cmd.png)
 ``多条指令支持``
 
 ## 3.变量支持

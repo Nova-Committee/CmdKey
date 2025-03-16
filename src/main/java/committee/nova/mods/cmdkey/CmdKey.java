@@ -44,6 +44,7 @@ public class CmdKey {
         LOGGER = event.getModLog();
         CONFIG_FOLDER = event.getModConfigurationDirectory();
         MOD_CONFIG_FOLDER = new File(CONFIG_FOLDER, "cmdkey");
+        ServerConfig.init(event.getSuggestedConfigurationFile());
 
         PktHandler packet = new PktHandler();
         //NetworkRegistry.instance().registerChannel(packet, "cmdkey:verify");
@@ -51,7 +52,6 @@ public class CmdKey {
         NetworkRegistry.instance().registerChannel(packet, "cmdkey:perform", Side.SERVER);
 
         if (event.getSide() == Side.SERVER) {
-            ServerConfig.init(event.getSuggestedConfigurationFile());
             registerPlaceholder();
             if (ServerConfig.key.equals("a9$V$B#7farNZd")){
                 ModConfig.load(MOD_CONFIG_FOLDER);

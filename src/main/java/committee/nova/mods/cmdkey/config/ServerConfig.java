@@ -16,7 +16,7 @@ public class ServerConfig {
     public static void init(File file) {
         cfg = new Configuration(file);
         cfg.load();
-        key = cfg.get("settings", "key", "a9$V$B#7farNZd",
+        key = cfg.get("settings", "key", "",
                 "key").getString();
         cfg.save();
     }
